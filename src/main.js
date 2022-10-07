@@ -1,6 +1,4 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { defineCustomElement } from 'vue'
+import MyFoo from './MyFoo.vue'
 
-import './assets/main.css'
-
-createApp(App).mount('#app')
+customElements.define('my-foo', defineCustomElement(MyFoo))
